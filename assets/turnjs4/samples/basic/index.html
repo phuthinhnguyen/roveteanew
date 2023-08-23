@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
+
+
+	<link rel="stylesheet" href="css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+	<script src="css/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+		rel="stylesheet">
+	<style>
+		#menu-nav {
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Top -->
+	<nav class="container-fluid">
+		<div class="row">
+			<div class="left">
+				<img src="pages/rove_logo_new.png">
+				<ul>
+					<li>
+						<a href="../../../../index.html">Home</a>
+					</li>
+
+					<li>
+						<a id="menu-nav" href="index.html">Menu</a>
+					</li>
+
+					<li>
+						<a href="../../../../gallery.html">Gallery</a>
+					</li>
+					<li>
+						<a href="../../../../aboutus.html">About us</a>
+					</li>
+					<!-- <li>
+						<a href="../../../../jobs.html">Jobs</a>
+					</li> -->
+					<li>
+						<a href="../../../../contactus.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="right-button">
+					<button onclick="window.open('')"><i
+							class="fa-solid fa-mug-hot"></i>ORDER NOW</button>
+					<button onclick="window.open('')"><i
+							class="fa-solid fa-mug-hot"></i>PICK ONLINE</button>
+				</div>
+				<div class="right-button-responsive">
+					<button onclick="window.open('')"><i
+							class="fa-solid fa-mug-hot"></i>ORDER NOW</button>
+					<button onclick="window.open('')"><i
+							class="fa-solid fa-mug-hot"></i>PICK ONLINE</button>
+					<a class="order" href="" target="_blank"><i
+							class="fa-solid fa-cart-shopping"></i></a>
+					<a class="order" href="" target="_blank"><i
+							class="fa-solid fa-truck-fast"></i></a>
+					<a class="phone" href="tel:+05890000111"><i class="fa-solid fa-phone"></i></a>
+				</div>
+				<div class="menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">
+					<a><i class="fa fa-bars" aria-hidden="true"></i></a>
+				</div>
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+					aria-labelledby="offcanvasWithBothOptionsLabel">
+					<div class="offcanvas-header">
+						<img src="pages/rove_logo_new.png" alt="" onclick="window.location.href='index.html'">
+						<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+							aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<div class="menu-show">
+							<div class="menu-show-wrap">
+								<a href="../../../../index.html">Home</a>
+								<a href="index.html">Menu</a>
+								<a href="../../../../gallery.html">Gallery</a>
+								<a href="../../../../aboutus.html">About us</a>
+								<!-- <a href="../../../../jobs.html">Jobs</a> -->
+								<a href="../../../../contactus.html">Contact</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- breadcrumb -->
+	<div class="menuorder-head">
+		<h1>Menu</h1>
+		<div class="bcrumb"
+			style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='white'/%3E%3C/svg%3E&#34;);"
+			aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Menu</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="menuorder">
+		<div class="flipbook-viewport">
+			<div class="container">
+				<div class="flipbook">
+					<div class="flipbook-pages cover" style="background-image: url(pages/cover-front.png);">
+						<!-- <h2>Menu</h2> -->
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/brown sugar signature.png" alt="">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Special popular drinks</h2>
+								<h2>$5.95</h2>
+								<!-- <p>Large cup comes with Apple, Mango, Strawberry, varied Jelly and Chia Seeds</p> -->
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>A1. Brown sugar milk cream – (brown sugar non-dairy milk, salted cream,
+											non-caffein)</p>
+										<p>A2. Brown sugar signature - (brown sugar oolong milk tea, salted cream)</p>
+										<p>A3. Marble strawberry - (strawberry milk tea, salted cream)</p>
+										<p>A4. Royal Milk tea - (special black milk tea, cheese cream)</p>
+										<p>A5. Rose-lychee cloud – (rose lychee fresh tea, cheese cream)</p>
+										<p>A6. Blue bunny - (butterfly pea milk tea, blue salted cream)</p>
+										<p>A7. Matcha cloud –(Matcha mixed, fresh Milk, cheese cream)</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<!-- <p class="price">$5.50</p>
+										<p class="price">$5.50</p>
+										<p class="price">$5.50</p>
+										<p class="price">$5.50</p>
+										<p class="price">$5.50</p>
+										<p class="price">$5.50</p>
+										<p class="price">$5.50</p>
+										<p class="price">$5.50</p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/blue bunny.png" alt="">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Special popular drinks</h2>
+								<h2>$5.95</h2>
+								<!-- <p>Large cup comes with Apple, Mango, Strawberry, varied Jelly and Chia Seeds</p> -->
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>A8. Egg puff matcha milk tea –(matcha mixed, fresh milk, egg cream)</p>
+										<p>A9. Egg puff taro milk tea –(taro mixed, non-dairy milk, egg cream)</p>
+										<p>A10. Cream Brulle</p>
+										<p>A11. Honey lemon cream tea (fresh lemon, honey tea, salted cream)</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<!-- <p class="price">$5.50</p>
+									<p class="price">$5.50</p>
+									<p class="price">$5.50</p>
+									<p class="price">$5.50</p>
+									<p class="price">$5.50</p>
+									<p class="price">$5.50</p>
+									<p class="price">$5.50</p>
+									<p class="price">$5.50</p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/oolongmilktea.png" alt="">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Classic Milk Tea</h2>
+								<h2>$4.95</h2>
+								<p>Upgrade to Large $0.75</p>
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>E1. Black Milk Tea</p>
+										<p>E2. Jasmine milk tea</p>
+										<p>E3. Oolong milk tea</p>
+										<p>E4. Butterfly pea milk tea</p>
+										<p>E5. Thai tea</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<!-- <p class="price"></p>
+										<p class="price"></p>
+										<p class="price"></p>
+										<p class="price"></p>
+										<p class="price"></p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/hokkaido milk tea.png" alt="">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Flavor Milk Tea</h2>
+								<h2>$5.45</h2>
+								<p>Upgrade to Large $0.75</p>
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>M1. Hokkaido milk tea</p>
+										<p>M2. Okinawa milk tea</p>
+										<p>M3. Matcha milk tea</p>
+										<p>M4. Taro milk tea</p>
+										<p>M5. Winter melon milk tea</p>
+										<p>M6. Strawberry milk tea</p>
+										<p>M7. Mango milk tea</p>
+										<p>M8. Peach milk tea</p>
+										<p>M9. Lychee milk tea</p>
+										<p>M10. Rose lychee milk tea</p>
+										<p>M11. Passion fruit milk tea</p>
+										<p>M12. Honeydew milk tea</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<!-- <p class="price"></p>
+										<p class="price"></p>
+										<p class="price"></p>
+										<p class="price"></p>
+										<p class="price"></p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/Oolong fresh tea.png" alt="">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Classic fresh tea</h2>
+								<h2>$4.45</h2>
+								<p>Upgrade to Large $0.75</p>
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>T1. Black fresh tea</p>
+										<p>T2. Jasmine fresh tea</p>
+										<p>T3. Oolong fresh tea</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<!-- <p class="price">$5.95</p>
+										<p class="price">$5.95</p>
+										<p class="price">$5.95</p>
+										<p class="price">$5.95</p>
+										<p class="price">$5.95</p>
+										<p class="price">$5.95</p>
+										<p class="price">$5.95</p>
+										<p class="price">$5.95</p>
+										<p class="price">$5.95</p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/Strawberry fruit tea.png" alt="">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Fruit tea</h2>
+								<h2>$4.95 </h2>
+								<!-- <p>(Pick a Tea: Black, Jasmine, or oolong)</p> -->
+								<p>Upgrade to Large $0.75</p>
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>F1. Strawberry</p>
+										<p>F2. Mango</p>
+										<p>F3. Lychee</p>
+										<p>F4. Peach</p>
+										<p>F5. Passion fruit</p>
+										<p>F6. Green Apple</p>
+										<p>F7. Pineapple</p>
+										<p>F8. Blueberry</p>
+										<p>F9. Honeydew</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<!-- <p class="price">$6.25</p>
+										<p class="price">$6.25</p>
+										<p class="price">$6.25</p>
+										<p class="price">$6.25</p>
+										<p class="price">$6.25</p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/eggpuff coffe.png" alt="">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Coffee milk tea</h2>
+								<h2>$5.45</h2>
+								<p>Upgrade to Large $0.75</p>
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>C1. Vietnamese coffee milk tea</p>
+										<p>C2. Brown sugar coffee milk tea</p>
+										<p>C3. Hazelnut coffee milk tea</p>
+										<p>C4. Caramel coffee milk tea</p>
+										<p>C5. Honey coffee milk tea</p>
+										<p>C6. Ube coffee milk tea</p>
+										<p>C7. Egg puff coffee milk tea</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<p class="price">$5.45</p>
+										<p class="price">$5.45</p>
+										<p class="price">$5.45</p>
+										<p class="price">$5.45</p>
+										<p class="price">$5.45</p>
+										<p class="price">$6.20</p>
+										<p class="price">$6.20</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/ube coconut.png" alt="">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Smoothies</h2>
+								<h2></h2>
+								<p>Upgrade to Large $0.75</p>
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>S1. Ube coconut</p>
+										<p>S2. Pina colada (non-alcohol)</p>
+										<p>S3. Taro coconut</p>
+										<p>S4. Taro</p>
+										<p>S5. Strawberry</p>
+										<p>S6. Mango</p>
+										<p>S7. Lychee</p>
+										<p>S8. Peach</p>
+										<p>S9. Passion fruit</p>
+										<p>S10. Pineapple </p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<p class="price">$6.20</p>
+										<p class="price">$6.20</p>
+										<p class="price">$6.20</p>
+										<p class="price">$5.70</p>
+										<p class="price">$5.70</p>
+										<p class="price">$5.70</p>
+										<p class="price">$5.70</p>
+										<p class="price">$5.70</p>
+										<p class="price">$5.70</p>
+										<p class="price">$5.70</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/Strawberry Popping.png" alt="" style="width: 200px;height: 200px;">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Topping</h2>
+								<h2></h2>
+								<!-- <p>(Pick a Tea: Black, Jasmine, or oolong)</p> -->
+								<!-- <p>Mixing Flavor additional $0.55</p> -->
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>Tapioca boba</p>
+										<p>Crystal boba</p>
+										<p>Brown sugar crystal boba</p>
+										<p>Strawberry Popping boba</p>
+										<p>Mango Popping boba</p>
+										<p>Lychee popping boba</p>
+										<p>Peach popping boba</p>
+										<p>Passion Fruit popping boba</p>
+										<p>Yogurt popping boba</p>
+										<p>Strawberry jelly</p>
+										<p>Mango jelly</p>
+										<p>Lychee jelly</p>
+										<p>Rainbow jelly</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<p class="price">$0.75</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$0.75</p>
+										<p class="price">$0.75</p>
+										<p class="price">$0.75</p>
+										<p class="price">$0.75</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<!-- <img src="pages/product-5.png" alt=""> -->
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Extra cream</h2>
+								<h2></h2>
+								<!-- <p>(Pick a Tea: Black, Jasmine, or oolong)</p> -->
+								<!-- <p>Mixing Flavor additional $0.55</p> -->
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>Salted cream</p>
+										<p>Cheese cream</p>
+										<p>Blue salted cream</p>
+										<p>Cream Brûlée</p>
+										<p>Egg Puff</p>
+										<p>Ube Puff</p>
+										<p>Cold foam</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">&nbsp;</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<!-- <img src="pages/product-5.png" alt=""> -->
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<!-- <h2>Upgrade to Large $0.75</h2> -->
+								<h2></h2>
+								<!-- <p>(Pick a Tea: Black, Jasmine, or oolong)</p> -->
+								<!-- <p>Mixing Flavor additional $0.55</p> -->
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<h2 style="color: #39b54a;">Sweet level:</h2>
+										<p>0%</p>
+										<p>25%</p>
+										<p>50%</p>
+										<p>75%</p>
+										<p>100%</p>
+										<h2>Ice Level:</h2>
+										<p>0%</p>
+										<p>50%</p>
+										<p>100%</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<!-- <p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p>
+										<p class="price">$1.00</p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/House Salad.png" alt="" style="width: 200px;height: 200px;">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Food</h2>
+								<h2></h2>
+								<!-- <p>(Pick a Tea: Black, Jasmine, or oolong)</p> -->
+								<!-- <p>Mixing Flavor additional $0.55</p> -->
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>Banh mi (meat, special sauce, cucumber, pickle daikon & carrot, cilantro)</p>
+										<p style="margin-left: 15px;">&#9679; Char xiu chicken</p>
+										<p style="margin-left: 15px;">&#9679; Grilled beef</p>
+										<!-- <p>3. Grill pork</p> -->
+										<p>House salad</p>
+										<p>Crab salad</p>
+										<p>Egg rolls –(house made with pork, beans, taro, carrot)</p>
+										<p style="margin-left: 15px;">&#9679; 2pcs</p>
+										<p style="margin-left: 15px;">&#9679; 4pcs</p>
+										<p>Shrimp tempura –(house made with shrimp battered & deep fried)</p>
+										<p style="margin-left: 15px;">&#9679; 3pcs</p>
+										<p style="margin-left: 15px;">&#9679; 5pcs</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<p class="price">$8.50</p>
+										<p class="price">&nbsp;</p>
+										<p class="price">&nbsp;</p>
+										<p class="price" style="margin-top: -18px;">&nbsp;</p>
+										<p class="price">$2.95</p>
+										<p class="price">$5.95</p>
+										<p class="price">&nbsp;</p>
+										<p class="price">&nbsp;</p>
+										<p class="price" style="margin-top: -18px;">$4.25</p>
+										<p class="price">$7.95</p>
+										<p class="price">&nbsp;</p>
+										<p class="price">&nbsp;</p>
+										<p class="price" style="margin-top: -18px;">$5.95</p>
+										<p class="price">$8.95</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<img src="pages/Mozzarella cheese stick.png" alt=""  style="width: 200px;height: 200px;">
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Food</h2>
+								<h2></h2>
+								<!-- <p>(Pick a Tea: Black, Jasmine, or oolong)</p> -->
+								<!-- <p>Mixing Flavor additional $0.55</p> -->
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>Sweet potato tempura (7pcs) - (house made sweet potato battered & deep fried)
+										</p>
+										<p>Mozzarella cheese stick (6pcs)</p>
+										<p>Garlic french fries</p>
+										<p>Garlic chicken wings (6pcs)</p>
+										<p>Fried gyoza (pork & veggies dumpling) (5pcs)</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<p class="price">$5.95</p>
+										<p class="price">&nbsp;</p>
+										<p class="price" style="margin-top: -18px;">$4.95</p>
+										<p class="price">$3.95</p>
+										<p class="price">$6.95</p>
+										<p class="price">$6.95</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages odd slice"
+						style="background-image: url(pages/page-odd.png);align-items: center;">
+						<!-- <img src="pages/product-5.png" alt=""> -->
+					</div>
+					<div class="flipbook-pages even">
+						<div class="content-wrap">
+							<div class="content">
+								<h2>Extra sauce</h2>
+								<h2>$0.50</h2>
+								<!-- <p>(Pick a Tea: Black, Jasmine, or oolong)</p> -->
+								<!-- <p>Mixing Flavor additional $0.55</p> -->
+								<div class="content-menu">
+									<div class="item" style="width: 80%;">
+										<p>Salad dressing</p>
+										<p>Sweet chili sauce</p>
+										<p>Spicy mayo sauce</p>
+										<p>Marinara sauce</p>
+										<p>Teriyaki Sauce</p>
+										<p>Ponzu Sauce</p>
+										<p>Ketchup</p>
+										<p>Mayonnaise</p>
+									</div>
+									<div class="item" style="width: 20%;">
+										<!-- <p class="price">$0.50</p>
+										<p class="price">$0.50</p>
+										<p class="price">$0.50</p>
+										<p class="price">$0.50</p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flipbook-pages cover" style="background-image: url(pages/cover-back.png);">
+						<!-- <h2>Menu</h2> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="menuorder-res">
+		<div class="item" style="padding-top: 30px;">
+			<div class="top">
+				<img src="pages/brown sugar signature.png" alt="">
+			</div>
+			<div class="bottom">
+				<h2>Special popular drinks</h2>
+				<h2>$5.95</h2>
+				<!-- <p>Large cup comes with Apple, Mango, Strawberry, varied Jelly and Chia Seeds.</p> -->
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>A1. Brown sugar milk cream – (brown sugar non-dairy milk, salted cream,
+							non-caffein)</p>
+						<p>A2. Brown sugar signature - (brown sugar oolong milk tea, salted cream)</p>
+						<p>A3. Marble strawberry - (strawberry milk tea, salted cream)</p>
+						<p>A4. Royal Milk tea - (special black milk tea, cheese cream)</p>
+						<p>A5. Rose-lychee cloud – (rose lychee fresh tea, cheese cream)</p>
+						<p>A6. Blue bunny - (butterfly pea milk tea, blue salted cream)</p>
+						<p>A7. Matcha cloud –(Matcha mixed, fresh Milk, cheese cream)</p>
+						<p>A8. Egg puff matcha milk tea –(matcha mixed, fresh milk, egg cream)</p>
+						<p>A9. Egg puff taro milk tea –(taro mixed, non-dairy milk, egg cream)</p>
+						<p>A10. Cream Brulle</p>
+						<p>A11. Honey lemon cream tea (fresh lemon, honey tea, salted cream)</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<!-- <p class="price">$5.50</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">$5.50</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">$5.50</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">$5.50</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">$5.50</p>
+						<p class="price">$5.50</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<img src="pages/oolongmilktea.png" alt="">
+			</div>
+			<div class="bottom">
+				<h2>Classic Milk Tea</h2>
+				<h2>$4.95</h2>
+				<p>Upgrade to Large $0.75</p>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>E1. Black Milk Tea</p>
+						<p>E2. Jasmine milk tea</p>
+						<p>E3. Oolong milk tea</p>
+						<p>E4. Butterfly pea milk tea</p>
+						<p>E5. Thai tea</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<!-- <p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<img src="pages/hokkaido milk tea.png" alt="">
+			</div>
+			<div class="bottom">
+				<h2>Flavor Milk Tea</h2>
+				<h2>$5.45</h2>
+				<p>Upgrade to Large $0.75</p>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>M1. Hokkaido milk tea</p>
+						<p>M2. Okinawa milk tea</p>
+						<p>M3. Matcha milk tea</p>
+						<p>M4. Taro milk tea</p>
+						<p>M5. Winter melon milk tea</p>
+						<p>M6. Strawberry milk tea</p>
+						<p>M7. Mango milk tea</p>
+						<p>M8. Peach milk tea</p>
+						<p>M9. Lychee milk tea</p>
+						<p>M10. Rose lychee milk tea</p>
+						<p>M11. Passion fruit milk tea</p>
+						<p>M12. Honeydew milk tea</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<!-- <p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<img src="pages/Oolong fresh tea.png" alt="">
+			</div>
+			<div class="bottom">
+				<h2>Classic fresh tea</h2>
+				<h2>$4.45</h2>
+				<p>Upgrade to Large $0.75</p>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>T1. Black fresh tea</p>
+						<p>T2. Jasmine fresh tea</p>
+						<p>T3. Oolong fresh tea</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<!-- <p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<img src="pages/Strawberry fruit tea.png" alt="">
+			</div>
+			<div class="bottom">
+				<h2>Fruit tea</h2>
+				<h2>$4.95</h2>
+				<p>Upgrade to Large $0.75</p>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>F1. Strawberry</p>
+						<p>F2. Mango</p>
+						<p>F3. Lychee</p>
+						<p>F4. Peach</p>
+						<p>F5. Passion fruit</p>
+						<p>F6. Green Apple</p>
+						<p>F7. Pineapple</p>
+						<p>F8. Blueberry</p>
+						<p>F9. Honeydew</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<!-- <p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">$5.95</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<img src="pages/eggpuff coffe.png" alt="">
+			</div>
+			<div class="bottom">
+				<h2>Coffee milk tea</h2>
+				<h2>$5.45</h2>
+				<p>Upgrade to Large $0.75</p>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>C1. Vietnamese coffee milk tea</p>
+						<p>C2. Brown sugar coffee milk tea</p>
+						<p>C3. Hazelnut coffee milk tea</p>
+						<p>C4. Caramel coffee milk tea</p>
+						<p>C5. Honey coffee milk tea</p>
+						<p>C6. Ube coffee milk tea</p>
+						<p>C7. Egg puff coffee milk tea</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<p class="price">$5.45</p>
+						<p class="price food10">$5.45</p>
+						<p class="price food9">$5.45</p>
+						<p class="price food11">$5.45</p>
+						<p class="price food12">$5.45</p>
+						<p class="price">$6.20</p>
+						<p class="price">$6.20</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<img src="pages/ube coconut.png" alt="">
+			</div>
+			<div class="bottom">
+				<h2>Smoothies</h2>
+				<h2></h2>
+				<p>Upgrade to Large $0.75</p>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>S1. Ube coconut</p>
+						<p>S2. Pina colada (non-alcohol)</p>
+						<p>S3. Taro coconut</p>
+						<p>S4. Taro</p>
+						<p>S5. Strawberry</p>
+						<p>S6. Mango</p>
+						<p>S7. Lychee</p>
+						<p>S8. Peach</p>
+						<p>S9. Passion fruit</p>
+						<p>S10. Pineapple </p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<p class="price">$6.20</p>
+						<p class="price food8">$6.20</p>
+						<p class="price">$6.20</p>
+						<p class="price">$5.70</p>
+						<p class="price">$5.70</p>
+						<p class="price">$5.70</p>
+						<p class="price">$5.70</p>
+						<p class="price">$5.70</p>
+						<p class="price">$5.70</p>
+						<p class="price">$5.70</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<img src="pages/Strawberry Popping.png" alt="">
+			</div>
+			<div class="bottom">
+				<h2>Topping</h2>
+				<h2></h2>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>Tapioca boba</p>
+						<p>Crystal boba</p>
+						<p>Brown sugar crystal boba</p>
+						<p>Strawberry Popping boba</p>
+						<p>Mango Popping boba</p>
+						<p>Lychee popping boba</p>
+						<p>Peach popping boba</p>
+						<p>Passion Fruit popping boba</p>
+						<p>Yogurt popping boba</p>
+						<p>Strawberry jelly</p>
+						<p>Mango jelly</p>
+						<p>Lychee jelly</p>
+						<p>Rainbow jelly</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<p class="price">$0.75</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price food13">$1.00</p>
+						<p class="price">$0.75</p>
+						<p class="price">$0.75</p>
+						<p class="price">$0.75</p>
+						<p class="price">$0.75</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<!-- <img src="pages/Peach Popping Boba.png" alt=""> -->
+			</div>
+			<div class="bottom">
+				<h2>Extra cream</h2>
+				<h2></h2>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>Salted cream</p>
+						<p>Cheese cream</p>
+						<p>Blue salted cream</p>
+						<p>Cream Brûlée</p>
+						<p>Egg Puff</p>
+						<p>Ube Puff</p>
+						<p>Cold foam</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<!-- <img src="pages/Peach Popping Boba.png" alt=""> -->
+			</div>
+			<div class="bottom">
+				<!-- <h2>Upgrade to Large $0.75</h2> -->
+				<!-- <h2>$5.45</h2> -->
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<h2 style="color: #39b54a;">Sweet level:</h2>
+						<p>0%</p>
+						<p>25%</p>
+						<p>50%</p>
+						<p>75%</p>
+						<p>100%</p>
+						<h2>Ice Level:</h2>
+						<p>0%</p>
+						<p>50%</p>
+						<p>100%</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<!-- <p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p>
+						<p class="price">$1.00</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<img src="pages/House Salad.png" alt="">
+			</div>
+			<div class="bottom">
+				<h2>Food</h2>
+				<h2></h2>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>Banh mi (meat, special sauce, cucumber, pickle daikon & carrot, cilantro)</p>
+						<p style="margin-left: 15px;">&#9679; Char xiu chicken</p>
+						<p style="margin-left: 15px;">&#9679; Grilled beef</p>
+						<!-- <p>3. Grill pork</p> -->
+						<p>House salad</p>
+						<p>Crab salad</p>
+						<p>Egg rolls –(house made with pork, beans, taro, carrot)</p>
+						<p style="margin-left: 15px;">&#9679; 2pcs</p>
+						<p style="margin-left: 15px;">&#9679; 4pcs</p>
+						<p>Shrimp tempura –(house made with shrimp battered & deep fried)</p>
+						<p style="margin-left: 15px;">&#9679; 3pcs</p>
+						<p style="margin-left: 15px;">&#9679; 5pcs</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<p class="price food1">$8.50</p>
+						<p class="price">&nbsp;</p>
+						<p class="price">&nbsp;</p>
+						<!-- <p class="price" style="margin-top: -10px;">&nbsp;</p> -->
+						<p class="price food2">$2.95</p>
+						<p class="price">$5.95</p>
+						<p class="price">&nbsp;</p>
+						<p class="price food5">$4.25</p>
+						<p class="price">$7.95</p>
+						<p class="price">&nbsp;</p>
+						<p class="price food3">$5.95</p>
+						<p class="price">$8.95</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<img src="pages/Mozzarella cheese stick.png" alt="">
+			</div>
+			<div class="bottom">
+				<h2>Food</h2>
+				<h2></h2>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>Sweet potato tempura (7pcs) - (house made sweet potato battered & deep fried)
+						</p>
+						<p>Mozzarella cheese stick (6pcs)</p>
+						<p>Garlic french fries</p>
+						<p>Garlic chicken wings (6pcs)</p>
+						<p>Fried gyoza (pork & veggies dumpling) (5pcs)</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<p class="price">$5.95</p>
+						<!-- <p class="price">&nbsp;</p> -->
+						<p class="price food4">$4.95</p>
+						<p class="price food6">$3.95</p>
+						<p class="price">$6.95</p>
+						<p class="price food7">$6.95</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="top">
+				<!-- <img src="pages/Mozzarella cheese stick.png" alt=""> -->
+			</div>
+			<div class="bottom">
+				<h2>Extra sauce</h2>
+				<h2>$0.50</h2>
+				<div class="content-menu">
+					<div class="item" style="width: 80%;">
+						<p>Salad dressing</p>
+						<p>Sweet chili sauce</p>
+						<p>Spicy mayo sauce</p>
+						<p>Marinara sauce</p>
+						<p>Teriyaki Sauce</p>
+						<p>Ponzu Sauce</p>
+						<p>Ketchup</p>
+						<p>Mayonnaise</p>
+					</div>
+					<div class="item" style="width: 20%;text-align: right;">
+						<!-- <p class="price">$0.50</p>
+						<p class="price">$0.50</p>
+						<p class="price">$0.50</p>
+						<p class="price">$0.50</p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+
+		function loadApp() {
+
+			// Create the flipbook
+
+			$('.flipbook').turn({
+				// Width
+
+				width: 922,
+
+				// Height
+
+				height: 700,
+
+				// Elevation
+
+				elevation: 50,
+
+				// Enable gradients
+
+				gradients: true,
+
+				// Auto center this flipbook
+
+				autoCenter: true
+
+			});
+		}
+
+		// Load the HTML4 version if there's not CSS transform
+
+		yepnope({
+			test: Modernizr.csstransforms,
+			yep: ['../../lib/turn.js'],
+			nope: ['../../lib/turn.html4.min.js'],
+			both: ['css/basic.css'],
+			complete: loadApp
+		});
+
+	</script>
+
+
+	<!-- footer -->
+	<footer>
+		<div class="footer-wrap">
+			<div class="footer-logo">
+				<img src="pages/rove_logo_new.png" alt="">
+			</div>
+			<div class="footer-content">
+				<div class="footer-content-item">
+					<h2>Contact</h2>
+					<p><i class="fa-solid fa-phone"></i>(530) 306-8609</p>
+					<!-- <p><i class="fa-solid fa-envelope"></i>jteallc@gmail.com</p> -->
+					<p><i class="fa-solid fa-location-dot"></i>4370 Golden Center Dr, Ste C Placerville, CA 95667</p>
+				</div>
+				<div class="footer-content-item">
+					<h2>Business hours</h2>
+					<p>Mon - Fri: 11:00 am - 8:00 pm</p>
+					<p>Sun, Sat: 10:30 am - 8:00 pm</p>
+				</div>
+				<div class="footer-content-item">
+					<h2>Social Media</h2>
+					<a href="https://www.facebook.com/RoveBobaTea/" target="_blank"><i
+							class="fa-brands fa-facebook"></i></a>
+					<a href="https://www.instagram.com/rove.boba.tea/" target="_blank"><i
+							class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.yelp.com/biz/rove-boba-tea-placerville?adjust_creative=togo&utm_campaign=yelp_feed&utm_medium=feed_v2&utm_source=togo"
+						target="_blank"><i class="fa-brands fa-yelp"></i></a>
+				</div>
+				<div class="footer-content-item">
+					<h2>Facebook Fanpage</h2>
+					<div class="facebook-content">
+						<div class="facebook-content-top" onclick="window.open('https://www.facebook.com/RoveBobaTea/')"
+							style="cursor: pointer;">
+							<img src="pages/footer-fb-logo-rove1.jpg" alt="">
+							<div class="facebook-content-top-text">
+								<a>Rove Boba Tea</a>
+								<!-- <a>901 followers</a> -->
+							</div>
+						</div>
+						<div class="facebook-content-bottom">
+							<button
+								onclick="window.open('https://www.facebook.com/plugins/error/confirm/page?iframe_referer=https%3A%2F%2Fjteallc.com%2F&kid_directed_site=false&secure=true&plugin=page&return_params=%7B%22href%22%3A%22https%3A%2F%2Fwww.facebook.com%2FRoveBobaTea%2F%22%2C%22tabs%22%3Anull%2C%22width%22%3A%22340%22%2C%22height%22%3A%22130%22%2C%22small_header%22%3A%22false%22%2C%22adapt_container_width%22%3A%22true%22%2C%22hide_cover%22%3A%22false%22%2C%22show_facepile%22%3A%22true%22%2C%22appId%22%3Anull%2C%22ret%22%3A%22sentry%22%2C%22act%22%3Anull%7D')"><i
+									class="fa-brands fa-square-facebook" style="color: #3B5998;"></i>Follow
+								page</button>
+							<!-- <button onclick="window.open('https://www.facebook.com/sharer/sharer.php?app_id=776730922422337&u=https%3A%2F%2Fwww.facebook.com%2F104203805231422&display=popup&ref=embed_page&src=page')"><i class="fa-solid fa-share"></i>Share</button> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bot">
+				<p>@ 2023 </p>
+				<p>Designed by &nbsp;<a href="" target="_blank">JAF SUPPLY</a></p>
+			</div>
+		</div>
+	</footer>
+	<div id="scrolltop">
+		<img src="pages/totop-arrow.png" alt="">
+	</div>
+	<script>
+		$("#scrolltop").click(function name(params) {
+			$("html").animate({ scrollTop: 0 });
+		})
+		window.onscroll = function () { scrolltop() };
+		function scrolltop() {
+			if ((document.body.scrollTop > 100) || (document.documentElement.scrollTop > 100)) {
+				$("#scrolltop").addClass("scrolltop-show");
+				$("nav").addClass('nav-sticky');
+			}
+			else {
+				$("#scrolltop").removeClass("scrolltop-show");
+				$("nav").removeClass('nav-sticky');
+			};
+		}
+	</script>
+</body>
+
+</html>

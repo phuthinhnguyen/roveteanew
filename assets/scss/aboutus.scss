@@ -1,0 +1,387 @@
+@import "variable";
+@import "font";
+@import "mixin";
+
+
+//CSS breadcrumb
+.aboutus-head{
+    @include font($fontJost);
+    @include pagehead;
+}
+
+//CCS aboutus
+.aboutus{
+    background-color: $background-item;
+    width: 100%;
+    font-family: $fontJost;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .aboutus-wrap{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 150px;
+        .item{
+            width: 50%;
+            h3{
+                color: $text-title;
+                margin-bottom: 40px;
+                font-weight:600 ;
+            }
+            p{
+                font-size: 18px;
+                color: $text-title;
+                font-weight: 400;
+            }
+            button{
+                @include button;
+                margin-top: 50px;
+                i{
+                    margin-right: 10px;
+                }
+            }
+            .item-img-wrap{
+                width: 100%;
+                position: relative;
+                .item-img1{
+                    position: absolute;
+                    top: -30px;
+                    left: 10%;
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: 1s;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover{
+                        transform: rotate(360deg) scale(1.4);
+                        z-index: 2;
+                    }
+                }
+                .item-img2{
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    z-index: 1;
+                    cursor: pointer;
+                    transition: 1s;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover{
+                        transform: rotate(360deg) scale(1.4);
+                        z-index: 2;
+                    }
+                }
+                .item-img3{
+                    position: absolute;
+                    top: 120px;
+                    left: 260px;
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: 1s;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover{
+                        transform: rotate(360deg) scale(1.4);
+                        z-index: 2;
+                    }
+                }
+                .item-img4{
+                    position: absolute;
+                    top: -250px;
+                    left: 30%;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: 1s;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover{
+                        transform: rotate(360deg) scale(1.4);
+                        z-index: 2;
+                    }
+                }
+                .item-img5{
+                    position: absolute;
+                    top: 0;
+                    left: 65%;
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: 1s;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &:hover{
+                        transform: rotate(360deg) scale(1.4);
+                        z-index: 2;
+                    }
+                }
+            }
+          
+        }
+        
+    }
+}
+#show-image{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    padding: 40px;
+    padding-left: 60px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: showimage .8s;
+    column-gap: 10px;
+    z-index: 2000;
+    .img{
+        width: 100%;
+        height: 70%;
+        max-width: 600px;
+        position: relative;
+        border: 5px solid white;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        #pre-button,#next-button{
+            position: absolute;
+            top: 50%;
+            opacity: 0;
+            cursor: pointer;
+            transition: 1s;
+            i{
+                color: $button-color;
+                font-size: 50px;
+            }
+        }
+        #pre-button{
+            left: 10px;
+        }
+        #next-button{
+            right: 10px;
+        }
+        &:hover{
+            #pre-button,#next-button{
+                opacity: 1;
+            }
+        }
+    }
+    .close{
+        display: flex;
+        align-items: flex-start;
+        height: 80%;
+        #close-button{
+            color: white;
+            background-color: $button-color;
+            font-size: 35px;
+            height: 32px;
+            width: 32px;
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            transition: .5s;
+            &:hover{
+                background-color: $button-hover;
+                border: 1px solid $text-title;
+            }
+            i{
+                font-size: 22px;
+            }
+        }
+     
+    }
+}
+@media screen and (max-width:1700px) {
+    .aboutus{
+        .aboutus-wrap{
+            .item{
+                .item-img2{
+                    right: 0;
+                }
+                .item-img5{
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1500px) {
+    .aboutus{
+        .aboutus-wrap{
+            .item{
+                .item-img2{
+                    display: none;
+                }
+                .item-img5{
+                    right: 0;
+                    top: -50px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1400px) {
+    .aboutus{
+        .aboutus-wrap{
+            column-gap: 50px;
+            .item{
+                .item-img5{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .aboutus{
+        .aboutus-wrap{
+            flex-direction: column;
+            row-gap: 50px;
+            .item{
+                width: 100%;
+                .item-img-wrap{
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    justify-content: space-between;
+                    align-items: center;
+                    .item-img1{
+                        position:static;
+                        width: 200px;
+                        height: 200px;
+                  
+                    }
+                    // .item-img2{
+                    //     position:static;
+                    //     display: block;
+                    //     width: 200px;
+                    //     height: 200px;
+                    // }
+                    .item-img3{
+                        position:static;
+                   
+                        width: 200px;
+                        height: 200px;
+                    }
+                    .item-img4{
+                        position:static;
+                     
+                        width: 200px;
+                        height: 200px;
+                    }
+                    .item-img5{
+                        position:static;
+                        display: block;
+                   
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+               
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:991px) {
+    .aboutus{
+        .aboutus-wrap{
+           padding-left: 30px;
+           padding-right: 30px;
+        }
+    }
+}
+@media screen and (max-width:870px) {
+    .aboutus{
+        .aboutus-wrap{
+            .item{
+                .item-img-wrap{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    column-gap: 50px;
+                    row-gap: 20px;
+                    justify-content: center;
+                }
+               
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .aboutus{
+        .aboutus-wrap{
+            .item{
+                .item-img-wrap{
+                    grid-template-columns: auto;
+                    row-gap: 20px;
+                    .item-img1,.item-img3,.item-img4,.item-img5{
+                        border-radius: 10px;
+                        width: 100%;
+                        height: 300px;
+                        &:hover{
+                           transform: scale(1);
+                        }
+                        
+                    }
+                    .item-img4,.item-img5,.item-img3{
+                        display: none;
+                    }
+                }
+               
+            }
+            
+        }
+    }
+}
+@media screen and (max-width:350px) {
+    .aboutus{
+        .aboutus-wrap{
+            .item{
+                .item-img-wrap{
+                    .item-img1{
+                        height: 200px;
+                        
+                    }
+                }
+               
+            }
+            
+        }
+    }
+}
+

@@ -1,0 +1,101 @@
+@import "variable";
+@import "font";
+@import "mixin";
+
+
+
+//CSS breadcrumb
+.jobs-head{
+    @include font($fontJost);
+    @include pagehead;
+}
+
+// CSS jobs
+.jobs{
+    background-color: $background-item;
+    width: 100%;
+    font-family: $fontJost;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .jobs-wrap{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 30px 150px;
+        column-gap: 40px;
+        color: $text-title;
+        .item{
+            border-radius: 20px;
+            border: 2px solid white;
+            background-color: rgb(39, 39, 39);
+            padding: 20px;
+            transition: .6s;
+   
+            h1{
+                font-weight: 400;
+            }
+            h4{
+                font-size: 18px;
+                margin-top: 30px;
+                color: $button-color;
+            }
+            ul{
+                li{
+                    font-size: 18px;
+                }
+            }
+            div{
+                font-size: 18px;
+                p{
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+                a{
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            button{
+                @include button;
+                margin-top: 30px;
+                width: 150px;
+            }
+        }
+        .item1:hover{
+            transform: scale(1.3) translateX(20%);
+        }
+        .item2:hover{
+            transform: scale(1.3) translateX(-20%);
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .jobs{
+        .jobs-wrap{
+            flex-direction: column;
+            row-gap: 100px;
+            .item1:hover{
+                transform: scale(1);
+            }
+            .item2:hover{
+                transform: scale(1);
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:991px) {
+    .jobs{
+        .jobs-wrap{
+           padding-left: 30px;
+           padding-right: 30px;
+        }
+    }
+    
+}
+
+

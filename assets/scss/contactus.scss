@@ -1,0 +1,41 @@
+@import "variable";
+@import "font";
+@import "mixin";
+
+
+
+//CSS breadcrumb
+.contactus-head{
+    @include font($fontJost);
+    @include pagehead;
+}
+
+
+//CSS contactus
+.contact{
+    .contact-wrap{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .contactus-map{
+        @include font($fontJost);
+        max-width:1200px;
+        padding: 20px;
+        height: 500px;
+        margin: 50px auto;
+        .contactus-map-container{
+            width: 100%;
+            height: 500px;
+        }
+    }
+}
+
+
+@media  screen and (max-width:991px) {
+    .contact{
+        .contact-wrap{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}

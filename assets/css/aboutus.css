@@ -1,0 +1,352 @@
+.aboutus-head {
+  font-family: "Jost";
+  text-align: center;
+  background-color: black;
+  padding-top: 50px;
+}
+.aboutus-head h1 {
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+}
+.aboutus-head div {
+  display: inline-block;
+  color: white;
+}
+.aboutus-head div a {
+  color: white;
+}
+.aboutus-head div a:hover {
+  text-decoration: underline;
+}
+
+.aboutus {
+  background-color: black;
+  width: 100%;
+  font-family: "Jost";
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.aboutus .aboutus-wrap {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 150px;
+}
+.aboutus .aboutus-wrap .item {
+  width: 50%;
+}
+.aboutus .aboutus-wrap .item h3 {
+  color: white;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.aboutus .aboutus-wrap .item p {
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+}
+.aboutus .aboutus-wrap .item button {
+  height: 40px;
+  width: 200px;
+  padding: 10px;
+  color: white;
+  background-color: #d40e8c;
+  font-family: "Jost";
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  margin-top: 50px;
+}
+.aboutus .aboutus-wrap .item button:hover {
+  background-color: #39b54a;
+  border: 1px solid white;
+}
+.aboutus .aboutus-wrap .item button i {
+  margin-right: 10px;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap {
+  width: 100%;
+  position: relative;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img1 {
+  position: absolute;
+  top: -30px;
+  left: 10%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 1s;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img1 img {
+  width: 100%;
+  height: 100%;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img1:hover {
+  transform: rotate(360deg) scale(1.4);
+  z-index: 2;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img2 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: 1s;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img2 img {
+  width: 100%;
+  height: 100%;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img2:hover {
+  transform: rotate(360deg) scale(1.4);
+  z-index: 2;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img3 {
+  position: absolute;
+  top: 120px;
+  left: 260px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 1s;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img3 img {
+  width: 100%;
+  height: 100%;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img3:hover {
+  transform: rotate(360deg) scale(1.4);
+  z-index: 2;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img4 {
+  position: absolute;
+  top: -250px;
+  left: 30%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 1s;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img4 img {
+  width: 100%;
+  height: 100%;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img4:hover {
+  transform: rotate(360deg) scale(1.4);
+  z-index: 2;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img5 {
+  position: absolute;
+  top: 0;
+  left: 65%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 1s;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img5 img {
+  width: 100%;
+  height: 100%;
+}
+.aboutus .aboutus-wrap .item .item-img-wrap .item-img5:hover {
+  transform: rotate(360deg) scale(1.4);
+  z-index: 2;
+}
+
+#show-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  padding: 40px;
+  padding-left: 60px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: showimage 0.8s;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  z-index: 2000;
+}
+#show-image .img {
+  width: 100%;
+  height: 70%;
+  max-width: 600px;
+  position: relative;
+  border: 5px solid white;
+}
+#show-image .img img {
+  width: 100%;
+  height: 100%;
+}
+#show-image .img #pre-button, #show-image .img #next-button {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  cursor: pointer;
+  transition: 1s;
+}
+#show-image .img #pre-button i, #show-image .img #next-button i {
+  color: #d40e8c;
+  font-size: 50px;
+}
+#show-image .img #pre-button {
+  left: 10px;
+}
+#show-image .img #next-button {
+  right: 10px;
+}
+#show-image .img:hover #pre-button, #show-image .img:hover #next-button {
+  opacity: 1;
+}
+#show-image .close {
+  display: flex;
+  align-items: flex-start;
+  height: 80%;
+}
+#show-image .close #close-button {
+  color: white;
+  background-color: #d40e8c;
+  font-size: 35px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#show-image .close #close-button:hover {
+  background-color: #39b54a;
+  border: 1px solid white;
+}
+#show-image .close #close-button i {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1700px) {
+  .aboutus .aboutus-wrap .item .item-img2 {
+    right: 0;
+  }
+  .aboutus .aboutus-wrap .item .item-img5 {
+    right: 0;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .aboutus .aboutus-wrap .item .item-img2 {
+    display: none;
+  }
+  .aboutus .aboutus-wrap .item .item-img5 {
+    right: 0;
+    top: -50px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .aboutus .aboutus-wrap {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  .aboutus .aboutus-wrap .item .item-img5 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .aboutus .aboutus-wrap {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .aboutus .aboutus-wrap .item {
+    width: 100%;
+  }
+  .aboutus .aboutus-wrap .item .item-img-wrap {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .aboutus .aboutus-wrap .item .item-img-wrap .item-img1 {
+    position: static;
+    width: 200px;
+    height: 200px;
+  }
+  .aboutus .aboutus-wrap .item .item-img-wrap .item-img3 {
+    position: static;
+    width: 200px;
+    height: 200px;
+  }
+  .aboutus .aboutus-wrap .item .item-img-wrap .item-img4 {
+    position: static;
+    width: 200px;
+    height: 200px;
+  }
+  .aboutus .aboutus-wrap .item .item-img-wrap .item-img5 {
+    position: static;
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .aboutus .aboutus-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .aboutus .aboutus-wrap .item .item-img-wrap {
+    display: grid;
+    grid-template-columns: auto auto;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .aboutus .aboutus-wrap .item .item-img-wrap {
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+  .aboutus .aboutus-wrap .item .item-img-wrap .item-img1, .aboutus .aboutus-wrap .item .item-img-wrap .item-img3, .aboutus .aboutus-wrap .item .item-img-wrap .item-img4, .aboutus .aboutus-wrap .item .item-img-wrap .item-img5 {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+  }
+  .aboutus .aboutus-wrap .item .item-img-wrap .item-img1:hover, .aboutus .aboutus-wrap .item .item-img-wrap .item-img3:hover, .aboutus .aboutus-wrap .item .item-img-wrap .item-img4:hover, .aboutus .aboutus-wrap .item .item-img-wrap .item-img5:hover {
+    transform: scale(1);
+  }
+  .aboutus .aboutus-wrap .item .item-img-wrap .item-img4, .aboutus .aboutus-wrap .item .item-img-wrap .item-img5, .aboutus .aboutus-wrap .item .item-img-wrap .item-img3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  .aboutus .aboutus-wrap .item .item-img-wrap .item-img1 {
+    height: 200px;
+  }
+}
