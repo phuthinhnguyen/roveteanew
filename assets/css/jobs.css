@@ -1,7 +1,7 @@
 .jobs-head {
   font-family: "Jost";
   text-align: center;
-  background-color: black;
+  background-color: white;
   padding-top: 50px;
 }
 .jobs-head h1 {
@@ -21,7 +21,7 @@
 }
 
 .jobs {
-  background-color: black;
+  background-color: white;
   width: 100%;
   font-family: "Jost";
   padding-top: 30px;

@@ -33,7 +33,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color: black;
+  background-color: white;
 }
 @keyframes navleft {
   0% {
@@ -203,7 +203,7 @@ nav .row .right .menu a i {
 nav .row .right .offcanvas {
   padding: 0;
   width: 380px;
-  background-color: black;
+  background-color: white;
 }
 nav .row .right .offcanvas-header {
   display: flex;
@@ -433,7 +433,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 
 .product {
-  background-color: black;
+  background-color: white;
   width: 100%;
   font-family: "Jost";
 }
@@ -467,7 +467,6 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
   cursor: pointer;
   border-radius: 20px;
   padding: 30px 0;
-  box-shadow: 0 1px 3px 0 #d40e8c, 0 3px 10px 0 #d40e8c;
 }
 .product .product-wrap .product-item .item img {
   width: 80%;
@@ -564,7 +563,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 
 .gallery {
-  background-color: black;
+  background-color: white;
   width: 100%;
   font-family: "Jost";
 }
@@ -705,7 +704,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 
 .reviews {
-  background-color: black;
+  background-color: white;
   width: 100%;
   font-family: "Jost";
 }
@@ -749,7 +748,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 .reviews .reviews-wrap .reviews-item .slide .item,
 .reviews .reviews-wrap .reviews-item .slide-responsive .item {
   text-align: center;
-  background-color: black;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -807,7 +806,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 
 .contact {
-  background-color: black;
+  background-color: white;
   width: 100%;
   font-family: "Jost";
   opacity: 0;
@@ -878,7 +877,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
   height: 40px;
   margin-bottom: 30px;
   padding-left: 10px;
-  border: none;
+  border: 2px solid black;
   outline: none;
 }
 .contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-textarea {
@@ -1072,7 +1071,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 
 footer {
-  background-color: black;
+  background-color: white;
   width: 100%;
   font-family: "Jost";
   padding-top: 30px;
