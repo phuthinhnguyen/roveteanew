@@ -5,30 +5,139 @@
 
 
 //CSS breadcrumb
-.contactus-head{
-    @include font($fontJost);
-    @include pagehead;
-}
+// .contactus-head{
+//     @include font($fontJost);
+//     @include pagehead;
+// }
 
+// CSS contact
+// .contact.contact-animate {
+//     animation: fadeinup 1.5s;
+//     opacity: 1;
+// }
 
-//CSS contactus
-.contact{
-    .contact-wrap{
-        padding-left: 150px;
-        padding-right: 150px;
-    }
-    .contactus-map{
-        @include font($fontJost);
-        max-width:1200px;
-        padding: 20px;
-        height: 500px;
-        margin: 50px auto;
-        .contactus-map-container{
+.contact {
+    background-color: white;
+    width: 100%;
+    font-family: $fontJost;
+
+    .contact-wrap {
+        max-width: 1280px;
+        padding: 40px 30px;
+        margin: auto;
+
+        h2 {
+            @include title;
+            margin-bottom: 30px;
+        }
+
+        .contactus-content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            height: 500px;
+            column-gap: 150px;
+
+            .contactus-content-item {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                p {
+                    font-family: $fontJost;
+                    font-size: 18px;
+                    color: $text-color;
+                    margin-bottom: 40px;
+                }
+
+                .contactus-content-item-wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    column-gap: 60px;
+                    width: 100%;
+
+                    .contactus-content-item-left,
+                    .contactus-content-item-right {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        width: 50%;
+
+                        label {
+                            font-family: $fontJost;
+                            font-size: 18px;
+                            color: $text-color;
+                            margin-bottom: 10px;
+                        }
+
+                        input {
+                            width: 100%;
+                            border-radius: 10px;
+                            font-size: 14px;
+                            height: 40px;
+                            margin-bottom: 30px;
+                            padding-left: 10px;
+                            border: 2px solid $text-color;
+                            outline: none;
+                        }
+                    }
+
+                }
+
+                .contactus-content-item-textarea {
+                    width: 100%;
+
+                    label {
+                        font-family: $fontJost;
+                        font-size: 18px;
+                        color: $text-color;
+                        margin-bottom: 10px;
+                    }
+
+                    textarea {
+                        resize: none !important;
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 2px solid $text-color;
+                        outline: none;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                    }
+                }
+
+                .contactus-content-item-button {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    button {
+                        @include button;
+                        margin-top: 40px;
+                        width: 140px;
+                    }
+                }
+
+                .contactus-map {
+                    width: 100%;
+                    height: 100%;
+                    .contactus-map-container {
+                        border-radius: 10px;
+                        width: 500px;
+                        height: 400px;
+                    
+                    }
+                }
+            }
         }
     }
+
+
 }
+
 
 
 @media  screen and (max-width:991px) {

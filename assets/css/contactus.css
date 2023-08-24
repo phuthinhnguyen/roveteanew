@@ -1,39 +1,129 @@
-.contactus-head {
-  font-family: "Jost";
-  text-align: center;
+.contact {
   background-color: white;
-  padding-top: 50px;
-}
-.contactus-head h1 {
-  font-weight: 400;
-  font-size: 40px;
-  color: white;
-}
-.contactus-head div {
-  display: inline-block;
-  color: white;
-}
-.contactus-head div a {
-  color: white;
-}
-.contactus-head div a:hover {
-  text-decoration: underline;
-}
-
-.contact .contact-wrap {
-  padding-left: 150px;
-  padding-right: 150px;
-}
-.contact .contactus-map {
-  font-family: "Jost";
-  max-width: 1200px;
-  padding: 20px;
-  height: 500px;
-  margin: 50px auto;
-}
-.contact .contactus-map .contactus-map-container {
   width: 100%;
-  height: 500px;
+  font-family: "Jost";
+}
+.contact .contact-wrap {
+  max-width: 1280px;
+  padding: 40px 30px;
+  margin: auto;
+}
+.contact .contact-wrap h2 {
+  font-family: "Jost";
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.contact .contact-wrap .contactus-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item p {
+  font-family: "Jost";
+  font-size: 18px;
+  color: black;
+  margin-bottom: 40px;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  width: 100%;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-left,
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-left label,
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-right label {
+  font-family: "Jost";
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-left input,
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-right input {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 14px;
+  height: 40px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border: 2px solid black;
+  outline: none;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-textarea {
+  width: 100%;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-textarea label {
+  font-family: "Jost";
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-textarea textarea {
+  resize: none !important;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid black;
+  outline: none;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-button button {
+  height: 40px;
+  width: 200px;
+  padding: 10px;
+  color: white;
+  background-color: #d40e8c;
+  font-family: "Jost";
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  margin-top: 40px;
+  width: 140px;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-button button:hover {
+  background-color: #39b54a;
+  border: 1px solid white;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-map {
+  width: 100%;
+  height: 100%;
+}
+.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-map .contactus-map-container {
+  border-radius: 10px;
+  width: 500px;
+  height: 400px;
 }
 
 @media screen and (max-width: 991px) {

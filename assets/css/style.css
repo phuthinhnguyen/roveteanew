@@ -12,20 +12,21 @@ body a {
   color: white;
 }
 
-@keyframes navsticky {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -20px, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+.top {
+  width: 100%;
+  height: 40px;
+  background-color: #d40e8c;
+  color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost";
 }
-.nav-sticky {
-  animation: navsticky 0.5s;
-  transition: transform 0.4s;
-  background-color: rgb(31, 30, 30);
+.top p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1.5px;
 }
 
 nav {
@@ -33,20 +34,13 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color: white;
-}
-@keyframes navleft {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+  background-color: rgb(247, 247, 247);
+  border-bottom: 8px solid #d40e8c;
 }
 nav .row {
-  height: 90px;
+  height: 100px;
   padding: 0 20px;
-  max-width: 1680px;
+  max-width: 1280px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -56,11 +50,12 @@ nav .row {
 nav .row .left {
   display: flex;
   align-items: center;
-  width: 70%;
+  justify-content: space-between;
+  width: 60%;
 }
 nav .row .left img {
-  width: 80px;
-  height: 60px;
+  width: 110px;
+  height: 70px;
   cursor: pointer;
 }
 nav .row .left ul {
@@ -75,21 +70,13 @@ nav .row .left li {
   margin-left: 30px;
 }
 nav .row .left li > a {
-  color: rgb(182, 180, 180);
-  font-size: 18px;
+  color: black;
+  font-size: 17px;
   text-align: center;
+  font-weight: 500;
 }
 nav .row .left li > a:hover {
-  color: white;
-}
-nav .row .left li > a:hover::after {
-  height: 2px;
-  animation: navleft 0.3s;
-  background-color: #d40e8c;
-  display: block;
-  margin: auto;
-  width: 100%;
-  content: "";
+  color: #d40e8c;
 }
 nav .row .right {
   width: 30%;
@@ -203,7 +190,7 @@ nav .row .right .menu a i {
 nav .row .right .offcanvas {
   padding: 0;
   width: 380px;
-  background-color: white;
+  background-color: rgb(247, 247, 247);
 }
 nav .row .right .offcanvas-header {
   display: flex;
@@ -416,22 +403,6 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
   color: white;
 }
 
-@keyframes productitem {
-  0% {
-    transform: translateY(-3px);
-  }
-  10% {
-    transform: translateY(-22px) scale(1.2);
-  }
-  100% {
-    transform: none;
-  }
-}
-.item.animate {
-  animation: fadeinup 1s;
-  opacity: 1;
-}
-
 .product {
   background-color: white;
   width: 100%;
@@ -444,7 +415,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 .product .product-wrap h2 {
   font-family: "Jost";
-  color: white;
+  color: black;
   font-size: 40px;
   text-align: center;
   margin-bottom: 80px;
@@ -525,45 +496,8 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
     transform: none;
   }
 }
-@keyframes gallery-animate5 {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-    transform: translate(0%, 0%);
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-    transform: none;
-  }
-}
-.item.gallery-animate1 {
-  animation: fadeinup 1.5s;
-  opacity: 1;
-}
-
-.item.gallery-animate2 {
-  animation: gallery-animate2 1.5s;
-  opacity: 1;
-}
-
-.item.gallery-animate3 {
-  animation: gallery-animate3 1.5s;
-  opacity: 1;
-}
-
-.item.gallery-animate4 {
-  animation: gallery-animate4 1.5s;
-  opacity: 1;
-}
-
-.item.gallery-animate5 {
-  animation: gallery-animate5 1.5s;
-  opacity: 1;
-}
-
 .gallery {
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   width: 100%;
   font-family: "Jost";
 }
@@ -574,7 +508,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 .gallery .gallery-wrap h2 {
   font-family: "Jost";
-  color: white;
+  color: black;
   font-size: 40px;
   text-align: center;
   margin-bottom: 80px;
@@ -597,11 +531,6 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
   width: 100%;
   height: 100%;
   transition: 0.6s;
-}
-.gallery .gallery-wrap .gallery-item .item:hover {
-  transform: scale(1.5);
-  z-index: 10;
-  box-shadow: 0 20px 40px #d40e8c;
 }
 .gallery .gallery-wrap .gallery-item .item:hover img {
   scale: 1.2;
@@ -638,14 +567,16 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
   width: 100%;
   height: 100%;
 }
-#show-image .img #pre-button, #show-image .img #next-button {
+#show-image .img #pre-button,
+#show-image .img #next-button {
   position: absolute;
   top: 50%;
   opacity: 0;
   cursor: pointer;
   transition: 1s;
 }
-#show-image .img #pre-button i, #show-image .img #next-button i {
+#show-image .img #pre-button i,
+#show-image .img #next-button i {
   color: #d40e8c;
   font-size: 50px;
 }
@@ -655,7 +586,8 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 #show-image .img #next-button {
   right: 10px;
 }
-#show-image .img:hover #pre-button, #show-image .img:hover #next-button {
+#show-image .img:hover #pre-button,
+#show-image .img:hover #next-button {
   opacity: 1;
 }
 #show-image .close {
@@ -704,7 +636,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 
 .reviews {
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   width: 100%;
   font-family: "Jost";
 }
@@ -715,7 +647,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 .reviews .reviews-wrap h2 {
   font-family: "Jost";
-  color: white;
+  color: black;
   font-size: 40px;
   text-align: center;
   margin-bottom: 80px;
@@ -748,7 +680,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 .reviews .reviews-wrap .reviews-item .slide .item,
 .reviews .reviews-wrap .reviews-item .slide-responsive .item {
   text-align: center;
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -761,7 +693,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 .reviews .reviews-wrap .reviews-item .slide .item h3,
 .reviews .reviews-wrap .reviews-item .slide-responsive .item h3 {
   font-family: "Jost";
-  color: white;
+  color: black;
   font-size: 40px;
   text-align: center;
   margin-bottom: 80px;
@@ -798,137 +730,6 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 .reviews .reviews-wrap .reviews-button button:hover {
   background-color: #39b54a;
   border: 1px solid white;
-}
-
-.contact.contact-animate {
-  animation: fadeinup 1.5s;
-  opacity: 1;
-}
-
-.contact {
-  background-color: white;
-  width: 100%;
-  font-family: "Jost";
-  opacity: 0;
-}
-.contact .contact-wrap {
-  max-width: 1680px;
-  padding: 40px 30px;
-  margin: auto;
-}
-.contact .contact-wrap h2 {
-  font-family: "Jost";
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 80px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-.contact .contact-wrap .contactus-content-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item p {
-  font-family: "Jost";
-  font-size: 18px;
-  color: white;
-  margin-bottom: 40px;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
-  width: 100%;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-left,
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-right {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 50%;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-left label,
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-right label {
-  font-family: "Jost";
-  font-size: 18px;
-  color: white;
-  margin-bottom: 10px;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-left input,
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-wrap .contactus-content-item-right input {
-  width: 100%;
-  border-radius: 10px;
-  font-size: 14px;
-  height: 40px;
-  margin-bottom: 30px;
-  padding-left: 10px;
-  border: 2px solid black;
-  outline: none;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-textarea {
-  width: 100%;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-textarea label {
-  font-family: "Jost";
-  font-size: 18px;
-  color: white;
-  margin-bottom: 10px;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-textarea textarea {
-  resize: none !important;
-  width: 100%;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-button {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-button button {
-  height: 40px;
-  width: 200px;
-  padding: 10px;
-  color: white;
-  background-color: #d40e8c;
-  font-family: "Jost";
-  font-size: 18px;
-  border-radius: 30px;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-  margin-top: 40px;
-  width: 140px;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-content-item-button button:hover {
-  background-color: #39b54a;
-  border: 1px solid white;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-map {
-  width: 100%;
-}
-.contact .contact-wrap .contactus-content-container .contactus-content-item .contactus-map .contactus-map-container {
-  border-radius: 10px;
 }
 
 .menu-slide-container {
@@ -1071,7 +872,7 @@ nav .row .right .offcanvas-body .menu-show .menu-show-close:hover {
 }
 
 footer {
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   width: 100%;
   font-family: "Jost";
   padding-top: 30px;
@@ -1098,6 +899,7 @@ footer .footer-wrap .footer-content {
        column-gap: 20px;
   margin-top: 30px;
   width: 100%;
+  max-width: 1200px;
 }
 footer .footer-wrap .footer-content .footer-content-item {
   max-width: 500px;
@@ -1105,27 +907,28 @@ footer .footer-wrap .footer-content .footer-content-item {
 }
 footer .footer-wrap .footer-content .footer-content-item h2 {
   font-family: "Jost";
-  color: white;
+  color: black;
   font-size: 40px;
   text-align: center;
   margin-bottom: 80px;
   margin-top: 50px;
-  font-size: 28px;
   margin: 0;
   text-align: left;
   margin-bottom: 30px;
   color: #d40e8c;
+  font-size: 22px;
+  border-bottom: 1px solid #d40e8c;
 }
 footer .footer-wrap .footer-content .footer-content-item p {
-  color: white;
-  font-size: 18px;
+  color: black;
+  font-size: 16px;
 }
 footer .footer-wrap .footer-content .footer-content-item p i {
   margin-right: 10px;
-  color: white;
+  color: black;
 }
 footer .footer-wrap .footer-content .footer-content-item a {
-  color: white;
+  color: black;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1146,124 +949,37 @@ footer .footer-wrap .footer-content .footer-content-item a:hover {
 footer .footer-wrap .footer-content .footer-content-item a:hover i {
   transform: rotateY(180deg);
 }
-footer .footer-wrap .footer-content .footer-content-item .facebook-content {
-  width: 100%;
-  height: 120px;
-  background-image: url("../images/home/footer-fb-logo-rove2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-top {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 200px;
-  height: 50px;
-  display: flex;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-}
-footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-top img {
-  width: 50px;
-  height: 50px;
-  border: 2px solid white;
-}
-footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-top .facebook-content-top-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-top .facebook-content-top-text a {
-  font-size: 14px;
-  margin: 0;
-  color: black;
-  font-weight: 600;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  width: 120px;
-  height: 20px;
+footer .footer-wrap .footer-content .footer-content-item .navigation-content a {
   text-align: left;
+  color: black;
+  border: none;
+  display: block;
+  width: 100px;
+  font-size: 16px;
 }
-footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-top .facebook-content-top-text a:first-of-type {
-  font-size: 18px;
-  font-weight: 500;
-}
-footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-bottom {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
-footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-bottom button {
-  font-size: 14px;
-  border: 1px solid lightgray;
-  color: rgb(88, 88, 88);
-}
-footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-bottom button i {
-  margin-right: 5px;
-}
-footer .footer-wrap .footer-content .footer-content-item .facebook-content .facebook-content-bottom button:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-footer .footer-wrap .footer-bot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-footer .footer-wrap .footer-bot p {
-  color: white;
-  margin-bottom: 0;
-}
-footer .footer-wrap .footer-bot p a {
+footer .footer-wrap .footer-content .footer-content-item .navigation-content a:hover {
   color: #d40e8c;
 }
 
-#scrolltop {
-  bottom: 40px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-color: #d40e8c;
+.footer-bot {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.4s;
-  z-index: 2000;
-}
-#scrolltop img {
-  width: 20px;
-  height: 20px;
-}
-#scrolltop:hover {
-  cursor: pointer;
-  background-color: #39b54a;
-}
-
-.scrolltop-show {
-  position: fixed;
-  bottom: 100px;
-  right: 30px;
-  width: 60px;
+  flex-direction: row;
+  background-color: #d40e8c;
+  width: 100%;
+  padding: 0 350px;
   height: 60px;
-  animation: navsticky 0.8s;
-  transition: transform 0.4s;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
-@keyframes navsticky {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -20px, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+.footer-bot p {
+  color: white;
+  margin-bottom: 0;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Jost";
 }
 
 @media screen and (max-width: 1700px) {

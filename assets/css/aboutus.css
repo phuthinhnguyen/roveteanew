@@ -1,31 +1,17 @@
-.aboutus-head {
-  font-family: "Jost";
-  text-align: center;
-  background-color: white;
-  padding-top: 50px;
-}
-.aboutus-head h1 {
-  font-weight: 400;
-  font-size: 40px;
-  color: white;
-}
-.aboutus-head div {
-  display: inline-block;
-  color: white;
-}
-.aboutus-head div a {
-  color: white;
-}
-.aboutus-head div a:hover {
-  text-decoration: underline;
-}
-
 .aboutus {
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   width: 100%;
   font-family: "Jost";
   padding-top: 30px;
   padding-bottom: 50px;
+}
+.aboutus h2 {
+  font-family: "Jost";
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 50px;
 }
 .aboutus .aboutus-wrap {
   margin: auto;
@@ -33,18 +19,18 @@
   justify-content: center;
   align-items: center;
   padding: 30px 150px;
+  margin-bottom: 150px;
 }
 .aboutus .aboutus-wrap .item {
   width: 50%;
 }
 .aboutus .aboutus-wrap .item h3 {
-  color: white;
+  color: black;
   margin-bottom: 40px;
-  font-weight: 600;
 }
 .aboutus .aboutus-wrap .item p {
   font-size: 18px;
-  color: white;
+  color: black;
   font-weight: 400;
 }
 .aboutus .aboutus-wrap .item button {
@@ -84,21 +70,18 @@
   overflow: hidden;
   cursor: pointer;
   transition: 1s;
+  z-index: 2;
 }
 .aboutus .aboutus-wrap .item .item-img-wrap .item-img1 img {
   width: 100%;
   height: 100%;
 }
-.aboutus .aboutus-wrap .item .item-img-wrap .item-img1:hover {
-  transform: rotate(360deg) scale(1.4);
-  z-index: 2;
-}
 .aboutus .aboutus-wrap .item .item-img-wrap .item-img2 {
   position: absolute;
   bottom: 20px;
-  right: 20px;
-  width: 200px;
-  height: 200px;
+  right: 50px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   overflow: hidden;
   z-index: 1;
@@ -108,10 +91,6 @@
 .aboutus .aboutus-wrap .item .item-img-wrap .item-img2 img {
   width: 100%;
   height: 100%;
-}
-.aboutus .aboutus-wrap .item .item-img-wrap .item-img2:hover {
-  transform: rotate(360deg) scale(1.4);
-  z-index: 2;
 }
 .aboutus .aboutus-wrap .item .item-img-wrap .item-img3 {
   position: absolute;
@@ -128,14 +107,10 @@
   width: 100%;
   height: 100%;
 }
-.aboutus .aboutus-wrap .item .item-img-wrap .item-img3:hover {
-  transform: rotate(360deg) scale(1.4);
-  z-index: 2;
-}
 .aboutus .aboutus-wrap .item .item-img-wrap .item-img4 {
   position: absolute;
   top: -250px;
-  left: 30%;
+  left: 20%;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -146,10 +121,6 @@
 .aboutus .aboutus-wrap .item .item-img-wrap .item-img4 img {
   width: 100%;
   height: 100%;
-}
-.aboutus .aboutus-wrap .item .item-img-wrap .item-img4:hover {
-  transform: rotate(360deg) scale(1.4);
-  z-index: 2;
 }
 .aboutus .aboutus-wrap .item .item-img-wrap .item-img5 {
   position: absolute;
@@ -165,10 +136,6 @@
 .aboutus .aboutus-wrap .item .item-img-wrap .item-img5 img {
   width: 100%;
   height: 100%;
-}
-.aboutus .aboutus-wrap .item .item-img-wrap .item-img5:hover {
-  transform: rotate(360deg) scale(1.4);
-  z-index: 2;
 }
 
 #show-image {

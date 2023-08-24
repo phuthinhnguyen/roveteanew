@@ -23,7 +23,7 @@
     <title>Home</title>
     <style>
         #home-nav {
-            color: white;
+            color: #d40e8c;
         }
     </style>
 </head>
@@ -101,7 +101,7 @@
     <!-- product -->
     <div class="product">
         <div class="product-wrap">
-            <h2>Our Menu</h2>
+            <!-- <h2>Our Menu</h2> -->
             <div class="product-item" onclick="window.open('assets/turnjs4/samples/basic/index.html')">
                 <div class="item">
                     <img src="assets/images/menu/all coffee.png" alt="">
@@ -155,7 +155,7 @@
         </div>
 
     </div>
-    <script>
+    <!-- <script>
         $(window).on('scroll', function () {
             scroll_pos = $(window).scrollTop() + $(window).height() + 1000;
             element_pos = $(".product h2").offset().top + $(".product h2").height() + 200;
@@ -163,10 +163,10 @@
                 $(".product-item .item").addClass('animate');
             };
         })
-    </script>
+    </script> -->
 
     <!-- gallery -->
-    <div class="gallery">
+    <!-- <div class="gallery">
         <div class="gallery-wrap">
             <h2>Our Gallery</h2>
             <div class="gallery-item">
@@ -196,9 +196,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- show-image -->
-    <div id="show-image">
+    <!-- <div id="show-image">
         <div class="img">
             <img id="img" src="assets/images/gallery/gallery-1.jpg" alt="">
             <a id="next-button"><i class="fa-solid fa-chevron-right"></i></a>
@@ -207,8 +207,8 @@
         <div class="close">
             <span id="close-button"><i class="fa-solid fa-xmark"></i></span>
         </div>
-    </div>
-    <script>
+    </div> -->
+    <!-- <script>
         $(window).on('scroll', function () {
             scroll_pos = $(window).scrollTop() + $(window).height();
             element_pos = $(".gallery h2").offset().top + $(".gallery h2").height() + 200;
@@ -265,10 +265,10 @@
             img.src = array[galleryindex].children[0].src;
 
         })
-    </script>
+    </script> -->
 
     <!-- reviews -->
-    <div class="reviews">
+    <!-- <div class="reviews">
         <div class="reviews-wrap">
             <h2>Customer Reviews</h2>
             <div class="reviews-item">
@@ -388,8 +388,8 @@
             </div>
         </div>
 
-    </div>
-    <script>
+    </div> -->
+    <!-- <script>
         $(window).on('scroll', function () {
             scroll_pos = $(window).scrollTop() + $(window).height();
             element_pos = $(".reviews h2").offset().top + $(".reviews h2").height();
@@ -397,11 +397,11 @@
                 $(".reviews").addClass('reviews-animate');
             };
         })
-    </script>
+    </script> -->
 
 
     <!-- contact -->
-    <div class="contact">
+    <!-- <div class="contact">
         <div class="contact-wrap">
             <h2>Contact Us</h2>
             <div class="contactus-content-container">
@@ -430,18 +430,18 @@
                     </div>
 
                 </div>
-                <!-- <div class="contactus-content-item">
+                <div class="contactus-content-item">
                     <div class="contactus-map">
                         <div class="contactus-map-container" id="googleMap">
                             Maps
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
 
-    </div>
-    <script>
+    </div> -->
+    <!-- <script>
         function myMap() {
             var contentString = "Here is Rove Boba Tea"
             var myLatlng = new google.maps.LatLng(38.704990127622374, -120.8274973503529);
@@ -462,8 +462,8 @@
         }
     </script>
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYItLgX4xuZSmNimNUY8NWUZskz5_---w&callback=myMap"></script>
-    <script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYItLgX4xuZSmNimNUY8NWUZskz5_---w&callback=myMap"></script> -->
+    <!-- <script>
         $(window).on('scroll', function () {
             scroll_pos = $(window).scrollTop() + $(window).height();
             element_pos = $(".contact h2").offset().top + $(".contact h2").height();
@@ -471,11 +471,11 @@
                 $(".contact").addClass('contact-animate');
             };
         })
-    </script>
+    </script> -->
 
 
     <!-- menu slide -->
-    <script>HTMLImporter.import("menu-slide.html");</script>
+    <!-- <script>HTMLImporter.import("menu-slide.html");</script> -->
 
     <!-- footer -->
     <script>HTMLImporter.import("footer.html");</script>

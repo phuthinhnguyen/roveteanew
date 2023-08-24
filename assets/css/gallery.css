@@ -1,7 +1,7 @@
 .gallery-head {
   font-family: "Jost";
   text-align: center;
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   padding-top: 50px;
 }
 .gallery-head h1 {
@@ -21,7 +21,7 @@
 }
 
 .gallery {
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   width: 100%;
   font-family: "Jost";
   padding-top: 30px;
